@@ -46,22 +46,36 @@
 
 //  Actividad 4
 
-function cotizarDolar(pesos){
-    return pesos/500;
+// function cotizarDolar(pesos){
+//     return pesos/500;
+// };
+
+// function cotizarPesos(dolar){
+//     return dolar*500;
+// };
+
+// let monto = parseFloat(prompt('Ingrese Monto:'));
+
+// let opcion = parseInt(prompt('Que quiere quiere convertir?\n'
+// +'1. Dolar\n'+'2. Pesos'));
+
+
+// if (opcion ===1){
+//     console.log('El monto ingresado son: U$U '+cotizarDolar(monto)+' dolares');
+// }else{
+//     console.log('El monto ingresado son: $ '+cotizarPesos(monto)+' pesos');
+// }
+
+//  Actividad 5
+
+function validacion(cadena){
+    return cadena != '';
 };
 
-function cotizarPesos(dolar){
-    return dolar/500;
+let txt = prompt('Integre texto:');
+
+while(txt != 'ESC'){
+    if(validacion(txt)){
+        txt=prompt('Otro texto:');
+    }
 };
-
-let monto = parseFloat(prompt('Ingrese Monto:'));
-
-let opcion = parseInt(prompt('Que quiere quiere convertir?\n'
-+'1. Dolar\n'+'2. Pesos'));
-
-
-if (opcion ===1){
-    console.log('El monto ingresado son:'+cotizarDolar(monto)+' dolares');
-}else{
-    console.log('El monto ingresado son:'+cotizarPesos(monto)+' pesos');
-}
