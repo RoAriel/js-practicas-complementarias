@@ -19,26 +19,80 @@
 
 // Actividad 2
 
-registrados = '';
-for(let i=0; i<5;i++){
+// registrados = '';
+// for(let i=0; i<5;i++){
 
-    let tienda = new Tienda(
-        prompt('nombre'),
-        prompt('dir'),
-        prompt('propietario'),
-        prompt('rubro')
-    );
+//     let tienda = new Tienda(
+//         prompt('nombre'),
+//         prompt('dir'),
+//         prompt('propietario'),
+//         prompt('rubro')
+//     );
 
-    registrados +=
-    "{\n" +
-    'Nombre :'+tienda.nombre +
-    "\n" +
-    'Direccion: '+tienda.direccion +
-    "\n" +
-    'Propietario: '+tienda.propietario +
-    "\n" +
-    'Rubro: '+tienda.rubro +
-    "\n}\n";
-}
+//     registrados +=
+//     "{\n" +
+//     'Nombre :'+tienda.nombre +
+//     "\n" +
+//     'Direccion: '+tienda.direccion +
+//     "\n" +
+//     'Propietario: '+tienda.propietario +
+//     "\n" +
+//     'Rubro: '+tienda.rubro +
+//     "\n}\n";
+// }
 
-console.log(registrados);
+// console.log(registrados);
+
+// Actividad 3
+// class Tienda{
+//     constructor(nombre, direccion, propietario, rubro){
+//         this.nombre = nombre;
+//         this.direccion = direccion;
+//         this.propietario = propietario;
+//         this.rubro = rubro;
+//     }
+//     estaAbierto(hora){
+//         if (((hora  >= 8) && (hora  <= 12))||((hora  >= 15) && (hora  <= 19))) {
+//             return true;
+//         }
+//         return false;
+//     }
+// }
+// const tienda4 = new Tienda("33 cents Store", "Cheap 231", "Barato SRL","Ropa");
+// for (let index = 0; index < 3 ; index++) {
+//     let entrada = parseInt(prompt("INGRESAR HORA EN PUNTO"));
+//     if(tienda4.estaAbierto(entrada)){
+//         alert("LA TIENDA ESTA ABIERTA A LAS "+entrada)
+//     }else{
+//         alert("LA TIENDA ESTA CERRADA A LAS "+entrada)
+//     }
+// }
+
+// Actividad 4
+
+// class Tienda{
+//     constructor(nombre, direccion, propietario, rubro){
+//         this.nombre = nombre;
+//         this.direccion = direccion;
+//         this.propietario = propietario;
+//         this.rubro = rubro;
+//     }
+//       esPropietario(nombre){
+//         return this.propietario == nombre;
+//     }
+// }
+// const tienda1 = new Tienda("Kwik-E-Mart", "Park 123", "Apu", "Almacen");
+// const tienda2 = new Tienda("Edna's Edibles", "PEREZ 323", "Edna Krabappel", "Panaderia");
+// const tienda3 = new Tienda("Springfield Mall", "Hall 231", "Mr. Burns", "Shopping");
+// for (let index = 0; index < 5; index++) {
+//     let entrada = prompt("INGRESAR NOMBRE DE PROPITARIO");
+//     if (tienda1.esPropietario(entrada)){
+//         alert(entrada + " ES PROPIETARIO DE LA TIENDA " + tienda1.nombre);
+//     }
+//     if (tienda2.esPropietario(entrada)){
+//         alert(entrada + " ES PROPIETARIO DE LA TIENDA " + tienda2.nombre);
+//     }
+//     if (tienda3.esPropietario(entrada)){
+//         alert(entrada + " ES PROPIETARIO DE LA TIENDA " + tienda3.nombre);
+//     }
+// }
