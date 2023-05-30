@@ -96,3 +96,39 @@
 //         alert(entrada + " ES PROPIETARIO DE LA TIENDA " + tienda3.nombre);
 //     }
 // }
+
+//Actividad 5
+
+class Cliente{
+    constructor(nombre,presupuesto,tarjeta,telefono){
+        this.nombre = nombre;
+        this.presupuesto = parseFloat(presupuesto);
+        this.tarjeta = tarjeta;
+        this.telefono = telefono;
+    }
+
+    transferirDinero(valor){
+        if(this.presupuesto > 0 && valor < this.presupuesto){
+            this.presupuesto-=valor;
+            return valor;
+        } else {
+            return 0;
+        };
+    };
+};
+
+const cl1 = new Cliente('Pepe',50000,true,'1523523');
+const cl2 = new Cliente('Juan',3000,true,'1523523');
+const cl3 = new Cliente('Jose',15,true,'1523523');
+
+for (let i = 0; i < 5; i++) {
+
+    let entrada = parseFloat(prompt('Ingrese monto:'));
+
+    if (cl1.transferirDinero(entrada))  alert(cl1.nombre+ ' TE PUEDE PAGAR '+entrada);
+
+    if (cl2.transferirDinero(entrada))  alert(cl2.nombre+ ' TE PUEDE PAGAR '+entrada);
+
+    if (cl3.transferirDinero(entrada))  alert(cl3.nombre+ ' TE PUEDE PAGAR '+entrada);
+};
+
