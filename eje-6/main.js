@@ -53,34 +53,43 @@ for (integrante of equipo){
 
 // Actividad 4
 
-class Jugador{
+// class Jugador{
  
-    constructor(nombre, nroCamiseta,edad,lesionado){
-        this.nombre = nombre;
-        this.nroCamiseta = nroCamiseta;
-        this.edad = edad;
-        this.isLesionado = lesionado;
-    };
-};
+//     constructor(nombre, nroCamiseta,edad,lesionado){
+//         this.nombre = nombre;
+//         this.nroCamiseta = nroCamiseta;
+//         this.edad = edad;
+//         this.isLesionado = lesionado;
+//     };
+// };
 
-function buscarJugador(jugador,equipo){
+// function buscarJugador(equipo,jugadorNombre){
+//     return  equipo.find(j => j.nombre === jugadorNombre.toLowerCase())
 
-    return  equipo.find(jName => jName === jugador)
+// }
 
-}
+// const j1 = new Jugador('j1',10,21,true);
+// const j2 = new Jugador('j2',20,22,true);
+// const j3 = new Jugador('j3',30,23,false);
+// const j4 = new Jugador('j4',40,24,true);
+// const j5 = new Jugador('j5',50,25,false);
 
-const j1 = new Jugador('j1',10,21,true);
-const j2 = new Jugador('j2',20,22,true);
-const j3 = new Jugador('j3',30,23,false);
-const j4 = new Jugador('j4',40,24,true);
-const j5 = new Jugador('j5',50,25,false);
+// const equipo =[];
 
-const equipo =[];
+// equipo.push(j1);
+// equipo.push(j2);
+// equipo.push(j3);
+// equipo.push(j4);
+// equipo.push(j5);
 
-equipo.push(j1);
-equipo.push(j2);
-equipo.push(j3);
-equipo.push(j4);
-equipo.push(j5);
+// for(let i=0; i<3;i++){
+//   let busqueda=buscarJugador(equipo,prompt('Ingrese el nombre del jugador'));
+//   if(busqueda != undefined){
+//   alert('Jugador: '+busqueda.nombre+'\nNro de Camiseta: '+busqueda.nroCamiseta+'\n Edad: '+busqueda.edad);
+//     }else{
+//         alert('NO EXISTE JUGADOR CON ESE NOMBRE');
+//     }
+// }
 
-console.log(buscarJugador(j1,equipo));
+// Actividad 5
+
